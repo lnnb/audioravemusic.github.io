@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!heroSection || !parallaxContainer) return;
 
+    // Optimization: Disable parallax on small screens (mobile)
+    if (window.innerWidth < 768) return;
+
     // Configuration
     const config = {
         rotateX: { start: 15, end: 0 },
