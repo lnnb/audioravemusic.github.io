@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!heroSection || !parallaxContainer) return;
 
-    // Optimization: Disable parallax on small screens (mobile)
-    if (window.innerWidth < 768) return;
+    // Optimization: Disable parallax on very small screens (iPhone SE)
+    if (window.innerWidth < 380) return;
 
     // Configuration
     const config = {
