@@ -1,397 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="AudioRave Records official website - Psy & Progressive music releases.">
+    <meta name="description"
+        content="Official website of AudioRave Recordings. Discover the best Psy-Trance and Progressive music. Submit your demos, listen to new releases, and join the movement.">
+    <meta name="keywords"
+        content="Psy-Trance, Progressive Trance, Record Label, AudioRave, Electronic Music, Demo Drop, Psychedelic Trance, Music Label">
     <meta name="author" content="Luciano N. Navarrete Binni">
     <meta name="robots" content="index, follow">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta content="en" property="og:locale">
-    <meta content="AudioRave Music" property="og:site_name">
-    <meta content="website" property="og:type">
-    <meta content="https://www.audiorave.com/" property="og:url">
-    <meta content="AudioRave Music official | Psy & Progressive Releases" property="og:title">
-    <meta content="Discover the latest releases from AudioRave Music." property="og:description">
+    <link rel="canonical" href="https://www.audiorave.com/">
+    <link rel="icon" href="assets/imgs/logoW.svg" type="image/svg+xml">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="AudioRave Recordings">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.audiorave.com/">
+    <meta property="og:title" content="AudioRave Recordings | Premier Psy & Progressive Trance Label">
+    <meta property="og:description"
+        content="Discover the latest releases from AudioRave Recordings. The ultimate destination for Psy & Progressive Trance.">
+    <meta property="og:image" content="https://www.audiorave.com/assets/imgs/audiorave_portrait.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.audiorave.com/">
+    <meta name="twitter:title" content="AudioRave Recordings | Premier Psy & Progressive Trance Label">
+    <meta name="twitter:description"
+        content="Discover the latest releases from AudioRave Recordings. The ultimate destination for Psy & Progressive Trance.">
+    <meta name="twitter:image" content="https://www.audiorave.com/assets/imgs/audiorave_portrait.png">
+
+    <title>AudioRave Recordings | Premier Psy & Progressive Trance Label</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <title>AudioRave Music | Psy & Progressive Releases</title>
-        
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#d4002c',
+                        dark: '#0a0a0a',
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "AudioRave Recordings",
+      "url": "https://www.audiorave.com",
+      "logo": "https://www.audiorave.com/assets/imgs/logoW.svg",
+      "sameAs": [
+        "https://www.instagram.com/audioraverecords/",
+        "https://www.beatport.com/label/audiorave-records/124950",
+        "https://soundcloud.com/audioraverecords",
+        "https://www.youtube.com/@audioraverecords"
+      ],
+      "genre": ["Psy-Trance", "Progressive Trance", "Electronic"],
+      "description": "AudioRave Recordings is a premier Psy-Trance and Progressive Trance record label dedicated to unearthing innovative sounds."
+    }
+    </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <!-- Google Analytics -->
-    
-    <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script> -->
+
+<body id="home">
 
     <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#newrelease">New Release</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Music</a>
-                </li>
-               <!-- <li class="nav-item">
-                    <a class="nav-link" href="#book-table">Book-Table</a>
-                </li> -->
-            </ul>
-            <a class="navbar-brand m-auto" href="#">
-                <img src="assets/imgs/logoW.svg" class="brand-img" alt="">
-                <span class="brand-txt">AudioRave</span>
-            </a>
-            <ul class="navbar-nav">
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
-                </li> -->
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="#testmonial">Reviews</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="demosend.html" class="btn btn-primary ml-xl-4">Demo Send</a>
-                </li>
-            </ul>
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/10 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a class="flex items-center gap-2" href="#">
+                        <img src="assets/imgs/logoW.svg"
+                            alt="AudioRave Recordings Logo - Psy & Progressive Trance Label" class="h-10 w-auto">
+                        <span class="text-2xl font-bold font-orbitron text-white tracking-wider">AUDIO<span
+                                class="text-primary">RAVE</span></span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#newrelease"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">New
+                            Release</a>
+                        <a href="#gallery"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Music</a>
+                        <a href="#about"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="demo-drop.html"
+                            class="text-gray-300 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Demo
+                            Send</a>
+                        <a href="#contact"
+                            class="bg-primary hover:bg-red-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                        id="mobile-menu-btn">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black/95 border-t border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#newrelease"
+                    class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">New
+                    Release</a>
+                <a href="#gallery"
+                    class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Music</a>
+                <a href="#about"
+                    class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="demo-drop.html"
+                    class="text-gray-300 hover:text-primary block px-3 py-2 rounded-md text-base font-medium">Demo
+                    Send</a>
+                <a href="#contact" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
         </div>
     </nav>
-     <!-- Header -->
-     <header class="header text-center text-white">
-        <div class="overlay">
-            <h1 class="display-2 font-weight-bold">AudioRave</h1>
-            <h2 class="display-5">Psy & Progressive</h2>
+
+    <!-- Hero Parallax Section -->
+    <div class="hero-parallax">
+        <div class="hero-header">
+            <h1 class="display-1 fw-bold animate__animated animate__fadeInDown">AudioRave</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">The Ultimate Psy & Progressive
+                Development Studio</p>
         </div>
-    </header>
 
-<!-- New Release Section -->
-<div id="newrelease" class="container-fluid wow fadeIn" data-wow-duration="1.5s">
-    <div class="row">
-        <!-- Image Background -->
-        <div class="col-lg-6 has-img-bg d-none d-lg-block"></div>
+        <div class="parallax-container">
+            <!-- Row 1 -->
+            <div class="parallax-row parallax-row-1">
+                <div class="product-card">
+                    <img src="assets/imgs/release_1.jpg" alt="AudioRave Release: Sensations - Psy-Trance Music">
+                    <div class="product-card-overlay"></div>
+                    <h2>Sensations</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_2.jpg" alt="AudioRave Release: Deep Voices - Progressive Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Deep Voices</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_3.jpg" alt="AudioRave Release: Another Freak - Psychedelic Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Another Freak</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_4.jpg" alt="AudioRave Release: From Heaven - Uplifting Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>From Heaven</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_5.jpg" alt="AudioRave Release: Middle Eastern - Ethnic Psy-Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Middle Eastern</h2>
+                </div>
+            </div>
 
-        <!-- Content Section -->
-        <div class="col-lg-6">
-            <div class="row justify-content-center">
-                <div class="col-sm-10 py-5 my-5">
-                    <h2 class="mb-4 text-center">New Release</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!
+            <!-- Row 2 -->
+            <div class="parallax-row parallax-row-2">
+                <div class="product-card">
+                    <img src="assets/imgs/release_6.jpg" alt="AudioRave Release: Gayatri - Spiritual Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Gayatri</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_7.jpg" alt="AudioRave Release: Be Hater - Dark Psy">
+                    <div class="product-card-overlay"></div>
+                    <h2>Be Hater</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_8.jpg" alt="AudioRave Release: Rivero - Progressive Beats">
+                    <div class="product-card-overlay"></div>
+                    <h2>Rivero</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_9.jpg"
+                        alt="AudioRave Release: Running Into The Riff - Melodic Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Running Into The Riff</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_10.jpg" alt="AudioRave Release: Visions - Psychedelic Visuals">
+                    <div class="product-card-overlay"></div>
+                    <h2>Visions</h2>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="parallax-row parallax-row-3">
+                <div class="product-card">
+                    <img src="assets/imgs/release_11.jpg" alt="AudioRave Release: Reborn - Psy-Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Reborn</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_12.jpg"
+                        alt="AudioRave Release: Heaven in Colors - Melodic Progressive">
+                    <div class="product-card-overlay"></div>
+                    <h2>Heaven in Colors</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_13.jpg" alt="AudioRave Release: Egypt - Tribal Psy-Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Egypt</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_14.jpg" alt="AudioRave Release: Life Struggles - Emotional Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Life Struggles</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_15.jpg" alt="AudioRave Release: Cymatics - Scientific Psy">
+                    <div class="product-card-overlay"></div>
+                    <h2>Cymatics</h2>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="parallax-row parallax-row-4">
+                <div class="product-card">
+                    <img src="assets/imgs/release_16.jpg" alt="AudioRave Release: Secret Planet - Alien Soundscapes">
+                    <div class="product-card-overlay"></div>
+                    <h2>Secret Planet</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_17.jpg" alt="AudioRave Release: Meditation - Zen Trance">
+                    <div class="product-card-overlay"></div>
+                    <h2>Meditation</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_18.jpg" alt="AudioRave Release: Disk Jockey’s - DJ Tools">
+                    <div class="product-card-overlay"></div>
+                    <h2>Disk Jockey’s</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_19.jpg" alt="AudioRave Release: Around The World - Global Psy">
+                    <div class="product-card-overlay"></div>
+                    <h2>Around The World</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_20.jpg"
+                        alt="AudioRave Release: Stage of Progress - Progressive Journey">
+                    <div class="product-card-overlay"></div>
+                    <h2>Stage of Progress</h2>
+                </div>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="parallax-row parallax-row-5">
+                <div class="product-card">
+                    <img src="assets/imgs/release_21.jpg" alt="AudioRave Release: Beacoming - Transformation">
+                    <div class="product-card-overlay"></div>
+                    <h2>Beacoming</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_22.jpg" alt="AudioRave Release: Psyzzola - Classic Psy">
+                    <div class="product-card-overlay"></div>
+                    <h2>Psyzzola</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_23.jpg" alt="AudioRave Release: Time to Change - Evolution">
+                    <div class="product-card-overlay"></div>
+                    <h2>Time to Change</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_24.jpg" alt="AudioRave Release: Infinity - Endless Beats">
+                    <div class="product-card-overlay"></div>
+                    <h2>Infinity</h2>
+                </div>
+                <div class="product-card">
+                    <img src="assets/imgs/release_25.jpg" alt="AudioRave Release: Mind over Mind - Mental Psy">
+                    <div class="product-card-overlay"></div>
+                    <h2>Mind over Mind</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Release Section -->
+    <section id="newrelease" class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Release Image -->
+                <div class="hidden lg:block relative group">
+                    <div
+                        class="absolute inset-0 bg-primary/20 blur-3xl rounded-full opacity-50 group-hover:opacity-75 transition-opacity duration-500">
+                    </div>
+                    <img src="assets/imgs/release_40.jpg" alt="New Release"
+                        class="relative z-10 w-full aspect-square object-cover rounded-xl shadow-2xl border border-white/10 transform transition-transform duration-500 group-hover:scale-105">
+                </div>
+
+                <!-- Content -->
+                <div class="space-y-6">
+                    <h6 class="text-primary font-orbitron tracking-widest uppercase">Just Dropped</h6>
+                    <h2 class="text-4xl md:text-5xl font-bold font-orbitron leading-tight">New Release</h2>
+                    <p class="text-xl text-gray-300 font-light">Experience the latest sounds from the underground.</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Dive into the depths of our newest sonic creation. "The Final Frontier" pushes the boundaries of
+                        psychedelic trance with driving basslines and ethereal atmospheres.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem, maiores doloremque quo perferendis, ut obcaecati harum.
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-3 py-1 border border-white/20 rounded-full text-sm text-gray-400">145 BPM</span>
+                        <span
+                            class="px-3 py-1 border border-white/20 rounded-full text-sm text-gray-400">Psy-Trance</span>
+                        <span class="px-3 py-1 border border-white/20 rounded-full text-sm text-gray-400">Key: Fm</span>
+                    </div>
+                    <div class="pt-4" id="new-release-player-container">
+                        <a href="#" onclick="showSpotifyPlayer(event)"
+                            class="inline-block px-8 py-3 border border-white hover:bg-white hover:text-black rounded-full font-medium transition-all duration-300">Listen
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Music Section -->
+    <section id="gallery" class="py-20 bg-black overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold font-orbitron text-white mb-4">OUR MUSIC</h2>
+            <div class="h-1 w-20 bg-primary mx-auto"></div>
+        </div>
+
+        <!-- Infinite Moving Cards Container -->
+        <div id="infinite-cards-container" class="flex flex-col gap-8 w-full">
+            <!-- Rows will be injected by JS -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 position-relative overflow-hidden text-white">
+        <section id="about" class="py-20 bg-dark text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text Content -->
+                    <div class="space-y-6 animate__animated animate__fadeInLeft">
+                        <h6 class="text-primary font-orbitron tracking-widest uppercase">Who We Are</h6>
+                        <h2 class="text-4xl md:text-5xl font-bold font-orbitron leading-tight">Pioneering the Future of
+                            <span class="text-primary">Psy-Trance</span>
+                        </h2>
+                        <p class="text-gray-400 text-lg leading-relaxed">
+                            AudioRave is more than just a label; it's a movement. We are dedicated to unearthing the
+                            most innovative sounds in the psychedelic and progressive trance scene. Our mission is to
+                            bridge the gap between digital art and sonic experiences.
+                        </p>
+                        <p class="text-gray-400 text-lg leading-relaxed">
+                            From the depths of the underground to the main stages of global festivals, our artists are
+                            pushing boundaries and redefining genres. Join us on this journey through sound and space.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-briefcase text-primary text-2xl"></i>
+                                <span class="font-medium">Professional Studio</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="bi bi-globe text-primary text-2xl"></i>
+                                <span class="font-medium">Global Reach</span>
+                            </div>
+                        </div>
+                        <a href="#contact"
+                            class="inline-block px-8 py-3 bg-primary hover:bg-red-700 text-white rounded-full font-medium transition-colors mt-6">Get
+                            in Touch</a>
+                    </div>
+
+                    <!-- Image/Visual -->
+                    <div class="relative animate__animated animate__fadeInRight">
+                        <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+                        <img src="assets/imgs/audiorave_portrait.png" alt="About AudioRave"
+                            class="relative z-10 rounded-2xl shadow-2xl border border-white/10 w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="bg-dark text-white pt-20 pb-10 border-t border-white/10 relative overflow-hidden">
+            <!-- Neon Scanline -->
+            <div
+                class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50 animate-pulse">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Social Media Section -->
+                <div class="py-12 border-b border-white/10 mb-12">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-orbitron text-white tracking-widest uppercase">Connect With Us</h3>
+                        <p class="text-gray-400 mt-2">Join the movement. Follow the beat.</p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="https://www.instagram.com/audioraverecords/?hl=en" target="_blank"
+                            class="social-btn group">
+                            <i class="bi bi-instagram"></i>
+                            <span class="social-label">Instagram</span>
+                        </a>
+                        <a href="https://www.beatport.com/label/audiorave-records/124950?srsltid=AfmBOopjbiUj1Rb0e5wiiGUX0p7NrcLT6wlnZcmbzVJX8SLvDQOXDXR1"
+                            target="_blank" class="social-btn group">
+                            <i class="bi bi-music-note-beamed"></i>
+                            <span class="social-label">Beatport</span>
+                        </a>
+                        <a href="https://soundcloud.com/audioraverecords" target="_blank" class="social-btn group">
+                            <i class="bi bi-cloud-fill"></i>
+                            <span class="social-label">Soundcloud</span>
+                        </a>
+                        <a href="https://www.youtube.com/@audioraverecords" target="_blank" class="social-btn group">
+                            <i class="bi bi-youtube"></i>
+                            <span class="social-label">YouTube</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Brand -->
+                    <div class="space-y-4">
+                        <a class="flex items-center gap-2" href="#">
+                            <img src="assets/imgs/logoW.svg" alt="AudioRave Logo" class="h-10 w-auto">
+                            <span class="text-2xl font-bold font-orbitron text-white tracking-wider">AUDIO<span
+                                    class="text-primary">RAVE</span></span>
+                        </a>
+                        <p class="text-gray-400 text-sm">
+                            The ultimate destination for Psy & Progressive Trance. Uniting the world through sound.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h5 class="text-lg font-bold font-orbitron mb-6 text-white">Quick Links</h5>
+                        <ul class="space-y-3">
+                            <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                            <li><a href="#newrelease" class="text-gray-400 hover:text-primary transition-colors">New
+                                    Release</a></li>
+                            <li><a href="#gallery" class="text-gray-400 hover:text-primary transition-colors">Music</a>
+                            </li>
+                            <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About Us</a>
+                            </li>
+                            <li><a href="demo-drop.html" class="text-gray-400 hover:text-primary transition-colors">Demo
+                                    Send</a></li>
+                            <li><a href="#contact"
+                                    class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div>
+                        <h5 class="text-lg font-bold font-orbitron mb-6 text-white">Legal</h5>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of
+                                    Service</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Licensing</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h5 class="text-lg font-bold font-orbitron mb-6 text-white">Stay Updated</h5>
+                        <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for the latest releases and
+                            news.</p>
+                        <form action="#" class="space-y-3">
+                            <input type="email" placeholder="Your Email"
+                                class="w-full px-4 py-2 bg-black/50 border border-white/10 rounded-md focus:outline-none focus:border-primary text-white placeholder-gray-500">
+                            <button type="submit"
+                                class="w-full px-4 py-2 bg-primary hover:bg-red-700 text-white rounded-md font-medium transition-colors">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-white/10 text-center">
+                    <p class="text-gray-500 text-sm">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script> AudioRave Music. All rights reserved.
                     </p>
-                    <p>
-                        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur, ratione dolore vero asperiores explicabo.</b>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ab itaque modi, reprehenderit fugit soluta, molestias optio repellat incidunt iure sed deserunt nemo magnam rem explicabo vitae. Cum, nostrum, quidem.
+                    <p class="text-gray-600 text-xs mt-2">
+                        Developed by <a href="mailto:luciano.n.n.binni@gmail.com"
+                            class="text-gray-500 hover:text-primary transition-colors">Luciano N. Navarrete Binni</a>
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </footer>
 
-
-    <!-- Gallery Section -->
-<div id="gallery" class="text-center bg-dark text-light py-5 wow fadeIn" data-wow-duration="1.5s">
-    <h2 class="section-title mb-4">OUR MUSIC</h2>
-</div>
-<div class="gallery row gx-0">
-    <!-- Gallery Items -->
-    <!-- Use a loop in a templating engine if possible to reduce redundancy -->
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.1s">
-        <img src="assets/imgs/gallery-1.jpg" alt="Gallery Image 1" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.2s">
-        <img src="assets/imgs/gallery-2.jpg" alt="Gallery Image 2" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.3s">
-        <img src="assets/imgs/gallery-3.jpg" alt="Gallery Image 3" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.4s">
-        <img src="assets/imgs/gallery-4.jpg" alt="Gallery Image 4" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.5s">
-        <img src="assets/imgs/gallery-5.jpg" alt="Gallery Image 5" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.6s">
-        <img src="assets/imgs/gallery-6.jpg" alt="Gallery Image 6" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.7s">
-        <img src="assets/imgs/gallery-7.jpg" alt="Gallery Image 7" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.8s">
-        <img src="assets/imgs/gallery-8.jpg" alt="Gallery Image 8" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="0.9s">
-        <img src="assets/imgs/gallery-9.jpg" alt="Gallery Image 9" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="1s">
-        <img src="assets/imgs/gallery-10.jpg" alt="Gallery Image 10" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="1.1s">
-        <img src="assets/imgs/gallery-11.jpg" alt="Gallery Image 11" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-    <div class="col-sm-6 col-lg-3 gallery-item wow fadeIn" data-wow-delay="1.2s">
-        <img src="assets/imgs/gallery-12.jpg" alt="Gallery Image 12" class="gallery-img">
-        <a href="#" class="gallery-overlay">
-            <i class="gallery-icon ti-plus"></i>
-        </a>
-    </div>
-</div>
-
-
-    <!-- book a table Section  
-    <div class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
-        <div class="">
-            <h2 class="section-title mb-5">BOOK A TABLE</h2>
-            <div class="row mb-5">
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="email" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="number" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="NUMBER OF GUESTS" max="20" min="0">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="time" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="EMAIL">
-                </div>
-                <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-                    <input type="date" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="12/12/12">
-                </div>
-            </div>
-            <a href="#" class="btn btn-lg btn-primary" id="rounded-btn">FIND TABLE</a>
-        </div>
-    </div> -->
-
-    <!-- BLOG Section  
-    <div id="blog" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
-        <h2 class="section-title py-5">EVENTS AT THE FOOD HUT</h2>
-        <div class="row justify-content-center">
-            <div class="col-sm-7 col-md-4 mb-5">
-                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Foods</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab" aria-controls="pills-profile" aria-selected="false">Juices</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/blog-1.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Reiciendis Laborum </h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/blog-2.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4 class="pt20 pb20">Adipisci Totam</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/blog-3.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$8</a></h1>
-                                <h4 class="pt20 pb20">Dicta Deserunt</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/blog-4.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$15</a></h1>
-                                <h4 class="pt20 pb20">Consectetur Adipisicing Elit</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/blog-5.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1>
-                                <h4 class="pt20 pb20">Ullam Laboriosam</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/blog-6.jpg" alt="template by DevCRID http://www.devcrud.com/" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Fugit Ipsam</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- REVIEWS Section  
-    <div id="testmonial" class="container-fluid wow fadeIn bg-dark text-light has-height-lg middle-items">
-        <h2 class="section-title my-5 text-center">REVIEWS</h2>
-        <div class="row mt-3 mb-5">
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="testmonial-card">
-                    <h3 class="testmonial-title">John Doe</h3>
-                    <h6 class="testmonial-subtitle">Web Designer</h6>
-                    <div class="testmonial-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nobis eligendi, quaerat accusamus ipsum sequi dignissimos consequuntur blanditiis natus. Aperiam!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="testmonial-card">
-                    <h3 class="testmonial-title">Steve Thomas</h3>
-                    <h6 class="testmonial-subtitle">UX/UI Designer</h6>
-                    <div class="testmonial-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus obcaecati cum eligendi perferendis magni dolorum ipsum magnam, sunt reiciendis natus. Aperiam!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="testmonial-card">
-                    <h3 class="testmonial-title">Miranda Joy</h3>
-                    <h6 class="testmonial-subtitle">Graphic Designer</h6>
-                    <div class="testmonial-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, nam. Earum nobis eligendi, dignissimos consequuntur blanditiis natus. Aperiam!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- ABOUT Section -->
-    <div id="about" class="container-fluid bg-dark text-light border-top wow fadeIn" style="position: relative; overflow: hidden;">
-        <!-- Background Video -->
-        <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-            <source src="path/to/your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    
-        <div class="row justify-content-center align-items-center min-vh-100" style="position: relative; z-index: 1;">
-            <div class="col-md-6 px-5 middle-items">
-                <h3>ABOUT US</h3>
-                <p>AudioRave is a record label born from the collaboration between producers Pollux and Rich Momento. Created with the aim of taking electronic music to new horizons, AudioRave has established itself as a reference in the music scene, creating a space where innovation and passion for music merge in every project.</p>
-                <div class="text-muted">
-                    <p><span class="ti-briefcase pr-3"></span>Since its inception, our focus has been on supporting emerging and established artists in the world of electronic music, with a special emphasis on the PsyTrance genre. At AudioRave we strive to deliver a unique sound characterised by enveloping, energetic and emotional melodies that connect with the audience on a deep level.</p>
-                    <p><span class="ti-heart pr-3"></span>With a global vision, we want to transcend borders and take our music to all corners of the world, creating a community that shares the same passion and love for electronic music. We are more than a label, we are a musical movement.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- Page Footer  -->
-    <div class="container-fluid bg-dark text-light has-height-md middle-items border-top text-center wow fadeIn">
-        <div class="row">
-            <div class="col-12 col-sm 2 d-flex justify-content-center align-items-center">
-                <h3><a href="https://www.instagram.com/audioraverecords/" target="_blank" class="text-light" aria-label="Instagram">INSTAGRAM</a></h3>
-            </div>
-            <div class="col-12 col-sm 2 d-flex justify-content-center align-items-center">
-                <h3><a href="https://www.facebook.com/tu_usuario" target="_blank" class="text-light" aria-label="Facebook">FACEBOOK</a></h3>
-            </div>
-            <div class="col-12 col-sm 2 d-flex justify-content-center align-items-center">
-                <h3><a href="https://soundcloud.com/audioraverecords" target="_blank" class="text-light" aria-label="SoundCloud">SOUNDCLOUD</a></h3>
-            </div>
-            <div class="col-12 col-sm 2 d-flex justify-content-center align-items-center">
-                <h3><a href="https://www.youtube.com/@audioraverecords/featured" target="_blank" class="text-light" aria-label="YouTube">YOUTUBE</a></h3>
-            </div>
-            <div class="col-12 col-sm 2 d-flex justify-content-center align-items-center">
-                <h3><a href="https://www.beatport.com/label/audiorave-records/124950" target="_blank" class="text-light" aria-label="Beatport">BEATPORT</a></h3>
-            </div>
-        </div>
-    </div>
-    <div class="bg-dark text-light text-center border-top wow fadeIn">
-        <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Made with <i class="ti-heart text-danger"></i> By <a href="https://www.linkedin.com/in/lucianonnbinni/" target="_blank" class="text-light" aria-label="DevLuciano LinkedIn">DevLuciano</a></p>
-    </div>
-    
-    
-    <!-- end of page footer -->
-
-	<!-- core  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!-- WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
+        <!-- WOW.js (Optional, if you want to keep scroll animations) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <!-- Hero Parallax Logic -->
+        <script src="assets/js/hero-parallax.js"></script>
+        <script src="assets/js/expandable-cards.js"></script>
+        <script src="assets/js/infinite-moving-cards.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script>
+            function showSpotifyPlayer(event) {
+                event.preventDefault();
+                const container = document.getElementById('new-release-player-container');
+                const iframe = '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6HSPhdZLl9kEURh1JPEbfc?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+                container.innerHTML = iframe;
+            }
+        </script>
 </body>
+
 </html>

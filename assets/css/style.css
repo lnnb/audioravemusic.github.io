@@ -1,0 +1,330 @@
+/* AudioRave Music - Custom Styles */
+
+:root {
+    --primary-color: #d4002c;
+    --secondary-color: #168be5;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --text-color: #faf9f8;
+    --neon-glow: 0 0 10px rgba(212, 0, 44, 0.7);
+}
+
+html {
+    scroll-padding-top: 6rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Typography Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Hero Parallax */
+.hero-parallax {
+    height: 200vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    perspective: 1000px;
+}
+
+.hero-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    pointer-events: none;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.hero-header p {
+    font-size: 1.5rem;
+    color: #ccc;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+.parallax-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform-style: preserve-3d;
+    width: 120%;
+    margin-left: -10%;
+    padding-top: 40vh;
+    will-change: transform, opacity;
+    align-items: center;
+    /* Center the rows */
+}
+
+.parallax-row {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    will-change: transform;
+}
+
+.product-card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-20px);
+    z-index: 5;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-card-overlay {
+    opacity: 1;
+}
+
+.product-card h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.product-card:hover h2 {
+    opacity: 1;
+}
+
+/* Expandable Cards */
+.expanded-card-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9998;
+    pointer-events: none;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, visibility 0s linear 0.3s;
+    backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.expanded-card-backdrop.active {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    pointer-events: auto;
+    visibility: visible;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, visibility 0s;
+}
+
+.expanded-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    /* Narrower for portrait look */
+    background: var(--dark-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    /* transform is handled by JS for animation */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.expanded-card-image-container {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    /* Ensure square aspect ratio */
+    overflow: hidden;
+    flex-shrink: 0;
+    /* Prevent shrinking when card height is reduced */
+}
+
+.expanded-card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expanded-card-content {
+    padding: 20px;
+    color: #fff;
+    transition: opacity 0.2s ease;
+}
+
+.expanded-card-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.expanded-card-content p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.expanded-card-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.2rem;
+    transition: background 0.2s, opacity 0.2s ease;
+}
+
+.expanded-card-close:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Infinite Moving Cards Animation */
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+.animate-scroll {
+    animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+/* Social Media Buttons */
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.social-btn:hover {
+    background: rgba(212, 0, 44, 0.1);
+    /* Primary color tint */
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(212, 0, 44, 0.4);
+    transform: translateY(-3px);
+}
+
+.social-btn i {
+    font-size: 1.5rem;
+}
+
+.social-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Platform Buttons (Expanded Card) */
+.platform-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.platform-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.beatport-btn {
+    background-color: #02ff95;
+    /* Beatport Green */
+    color: black;
+}
+
+.soundcloud-btn {
+    background-color: #ff5500;
+    /* SoundCloud Orange */
+}
+
+.spotify-btn {
+    background-color: #1DB954;
+    /* Spotify Green */
+}
+
+.back-btn {
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.back-btn:hover {
+    color: white;
+}
